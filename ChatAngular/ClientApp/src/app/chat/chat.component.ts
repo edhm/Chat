@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
 })
 
 export class ChatComponent  {
-  public nameDev = "EHM-Architec"
+  public nameDev: string[] = ["Java", ".Net", "Android", "Python"];
 }
