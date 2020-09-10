@@ -5,8 +5,8 @@
     <title></title>
 </head>
 <body>
-  <div *ngFor="let elemento of nameDev ">
-    Architect {{elemento}}
-  </div>
+  <app-message *ngFor="let elemento of nameDev "[texto]="elemento">
+   
+  </app-message>
 </body>
 </html>
