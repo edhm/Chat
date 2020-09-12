@@ -11,7 +11,7 @@ export class ChatComponent  {
   public nameDev: string[];
   constructor(http: HttpClient, @Inject("BASE_URL") baseUrl: string)
   {
-    http.get<Mesage[]>(baseUrl + "api/Chat/Message").subscribe(result => {
+    http.get<Message[]>(baseUrl + "api/Chat/Message").subscribe(result => {
       this.nameDev = result;
     }, error => console.error(error));
   }
