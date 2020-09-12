@@ -17,7 +17,7 @@ export class ChatComponent  {
   }
 }
 
-interface Mesage {
+interface Message {
   Id: number,
   Name: string,
   Text: string;
