@@ -1,6 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { error } from 'protractor';
+import { ChatService } from '../service/chat.service';
 
 @Component({
   selector: 'chat-app',
@@ -9,7 +10,8 @@ import { error } from 'protractor';
 
 export class ChatComponent  {
   public nameDev: string[];
-  constructor(http: HttpClient, @Inject("BASE_URL") baseUrl: string)
+  constructor(http: HttpClient, @Inject("BASE_URL") baseUrl: string,
+  protected chatService: ChatService)
   {
     http.get<Message[]>(baseUrl + "api/Chat/Message").subscribe(result => {
       this.nameDev = result;
