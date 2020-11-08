@@ -1,0 +1,2 @@
+¿Qué es SRT VTT?
+SubRip es un software libre y de código abierto para Windows cuya función principal es "ripear" o extraer los subtítulos y sus tiempos de sincronización de un vídeo. Es distribuido bajo la licencia GPL. SubRip también es el nombre de un formato de subtítulos creado por este software cuya extensión es . srt .
